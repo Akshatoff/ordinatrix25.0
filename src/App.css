@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coming+Soon&family=Montserrat&family=Montserrat+Alternates&family=Open+Sans&family=Poppins&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
+
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Coming Soon', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+font-family: "Orbitron", sans-serif;
+ font-family: "Boldonse", system-ui;
+font-family: "Belanosima", sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --bg: #131316;
+  --kala: #1c1c21;
+  --gray: #2f3037;
+  --notajeebgray: #cecece;
+  --white: #f5f5f5;
+  --smoltext: 1.2rem;
+  --bigboi: 5rem;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg);
+}
+
+.text {
+  color: var(--white);
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Home */
+
+#home {
+  display: flex;
+  align-items: center;
+  /* position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; */
+}
+
+.heading {
+  font-size: 6rem;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  text-align: center;
+}
+
+.circular-text {
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  font-weight: bold;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+}
+
+.circular-text span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 24px;
+  transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+}
+
+/* About */
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about-head {
+  color: var(--white);
+  font-size: var(--bigboi);
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0 20rem;
+  width: 5rem;
+  line-height: 5rem;
+}
+
+#about-head::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.1rem;
+  height: 10rem;
+  background-color: var(--white);
+  margin: 0 -2rem;
+}
+
+.para {
+  font-size: var(--smoltext);
+  width: 25rem;
+  text-align: center;
+  color: var(--notajeebgray);
+}
+
+.text-block {
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0rem;
+}
+
+.subheading {
+  font-size: 3rem;
+  color: var(--white);
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Event */
+
+#event-head {
+  font-size: var(--bigboi);
+  font-family: "Montserrat", sans-serif;
+  text-align: right;
+  margin: 2rem 5rem;
+}
+.cards {
+  position: relative;
+  width: 27.1875rem;
+  height: 27.1875rem;
+  margin: 0 2rem;
+  background-color: var(--bg);
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: all 200ms ease-in-out;
+}
+
+.card:nth-child(odd) {
+  background-color: var(--kala);
+}
+
+.card:nth-child(2) {
+  margin-top: 2rem;
+  margin-left: 8rem;
+}
+
+.frosted {
+  filter: blur(5px);
+}
+
+.card:nth-child(3) {
+  margin-top: 4rem;
+  margin-left: 16rem;
+}
+
+.card:nth-child(4) {
+  margin-top: 6rem;
+  margin-left: 24rem;
+}
+
+.card:nth-child(5) {
+  margin-top: 8rem;
+  margin-left: 32rem;
+}
+.card:nth-child(6) {
+  margin-top: 10rem;
+  margin-left: 40rem;
+}
+.card:nth-child(7) {
+  margin-top: 12rem;
+  margin-left: 48rem;
+}
+.card:nth-child(8) {
+  margin-top: 14rem;
+  margin-left: 56rem;
+}
+
+#card-head {
+  font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+}
+
+#card-des {
+  font-size: var(--smoltext);
+  width: 25rem;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background: var(--bg);
+  height: 100vh;
+}
+
+/* Team */
+
+#heading {
+  font-size: var(--bigboi);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 2rem 5rem;
+}
+
+.cards-team {
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-team {
+  flex-shrink: 0;
+  width: 27.1875rem;
+  height: 27.1875rem;
+  margin: 0 2rem;
+  background-color: #363636;
+}
