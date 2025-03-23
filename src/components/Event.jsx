@@ -45,13 +45,14 @@ const AnimatedCards = () => {
   ];
 
   useLayoutEffect(() => {
-    const lenis = new Lenis({
-      smooth: true,
-    });
+    // Remove the local Lenis instance - we already have one in the App component
+    // const lenis = new Lenis({
+    //   smooth: true,
+    // });
 
-    lenis.on("scroll", ScrollTrigger.update);
-    gsap.ticker.add((time) => lenis.raf(time * 1000));
-    gsap.ticker.lagSmoothing(0);
+    // lenis.on("scroll", ScrollTrigger.update);
+    // gsap.ticker.add((time) => lenis.raf(time * 1000));
+    // gsap.ticker.lagSmoothing(0);
 
     const ctx = gsap.context(() => {
       const cards = containerRef.current.querySelectorAll(
@@ -73,9 +74,10 @@ const AnimatedCards = () => {
           scrollTrigger: {
             trigger: containerRef.current,
             pin: true,
+            pinSpacing: true,
             scrub: true,
             start: "top top",
-            end: "+=5000",
+            end: "+=7000",
             invalidateOnRefresh: true,
             onUpdate: (self) => {
               const index = Math.floor(self.progress * (cards.length - 1));
@@ -89,13 +91,16 @@ const AnimatedCards = () => {
     }, containerRef);
 
     return () => {
-      lenis.destroy();
+      // lenis.destroy(); // Remove this line since we removed the Lenis instance
       ctx.revert();
     };
   }, []);
 
   return (
     <div ref={containerRef} className="container">
+      {/* Add this div to ensure the gradient shows through */}
+      <div className="background-overlay"></div>
+
       <h1 className="text" id="event-head">
         Events
       </h1>

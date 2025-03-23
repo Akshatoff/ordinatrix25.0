@@ -25,7 +25,7 @@ const Team = () => {
     const scrollTrigger = ScrollTrigger.create({
       trigger: containerRef.current,
       start: "top top",
-      end: `+=${scrollDuration}`, // Ensure it scrolls for the full slider length
+      end: `+=${scrollDuration + 1000}`, // Ensure it scrolls for the full slider length
       scrub: 5, // Ultra-smooth transition
       pin: true,
       pinSpacing: true,
@@ -43,7 +43,12 @@ const Team = () => {
 
   return (
     <div className="section" id="team" ref={containerRef}>
-      <h1 className="text" id="heading">Meet The Team</h1>
+      {/* Add this div to ensure the gradient shows through */}
+      <div className="background-overlay"></div>
+
+      <h1 className="text" id="heading">
+        Meet The Team
+      </h1>
 
       <Swiper
         ref={swiperRef}

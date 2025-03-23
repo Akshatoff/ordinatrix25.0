@@ -2,18 +2,35 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import Trident from "./Trident";
 import BlurText from "./BlurText";
+import DecryptedText from "./DecryptedText";
+import Particles from "./Particles";
 
 export default function Home() {
   return (
     <div className="section" id="home">
-      <BlurText
+      <DecryptedText
         text="Ordin@trix 25.0"
-        delay={150}
-        animateBy="words"
-        direction="top"
+        animateOn="view"
+        revealDirection="start"
         className="heading"
+        encryptedClassName="encrypted"
+        speed={120}
+        characters="ORDIN@TRIX 25.0"
+        maxIterations={10}
       />
-      <Trident></Trident>
+      <Particles
+        particleColors={["#ffffff", "#ffffff"]}
+        particleCount={200}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover={true}
+        alphaParticles={false}
+        disableRotation={false}
+        className="particles-container"
+      />
+
+      {/* <Trident></Trident> */}
     </div>
   );
 }
