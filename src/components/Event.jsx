@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "lenis";
+import SpotlightCard from "./SpotlightCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -106,9 +106,12 @@ const AnimatedCards = () => {
       </h1>
       <div className="cards">
         {cards_content.map((card, index) => (
-          <div
+          <SpotlightCard
             key={index}
-            className={`card ${index < activeIndex ? "frosted" : "active"}`}
+            spotlightColor="rgba(73, 235, 216, 0.8)"
+            className={`card custom-spotlight-card ${
+              index < activeIndex ? "frosted" : "active"
+            }`}
           >
             <h1 className="text" id="card-head">
               {card.title}
@@ -116,7 +119,7 @@ const AnimatedCards = () => {
             <h2 className="text" id="card-des">
               {card.text}
             </h2>
-          </div>
+          </SpotlightCard>
         ))}
       </div>
     </div>

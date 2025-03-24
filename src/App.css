@@ -214,68 +214,87 @@ html {
   font-size: var(--bigboi);
   font-family: "Uniface", serif;
   text-align: right;
-  margin: 2rem 5rem;
+  margin: 2rem 5rem 0 0;
 }
 .cards {
   position: relative;
-  width: 27.1875rem;
-  height: 27.1875rem;
-  margin: 0 2rem;
-  background-color: var(--bg);
+  margin-left: 2rem;
+  margin-top: -2rem;
 }
 
-.card {
+.card-spotlight {
+  position: relative;
+  border-radius: 1.5rem;
+  border: 1px solid #222;
+  background-color: #111;
+  padding: 2rem;
+  overflow: hidden;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --spotlight-color: rgba(255, 255, 255, 0.05);
+  width: 27rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-spotlight::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--gray);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
-  transition: all 200ms ease-in-out;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    var(--spotlight-color),
+    transparent 80%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
 }
 
-.card:nth-child(odd) {
-  background-color: var(--kala);
-}
-
-.card:nth-child(2) {
-  margin-top: 2rem;
-  margin-left: 8rem;
+.card-spotlight:hover::before,
+.card-spotlight:focus-within::before {
+  opacity: 0.6;
 }
 
 .frosted {
   filter: blur(5px);
 }
 
+.card:nth-child(2) {
+  margin-top: -12rem;
+  margin-left: 8rem;
+}
+
 .card:nth-child(3) {
-  margin-top: 4rem;
+  margin-top: -13rem;
   margin-left: 16rem;
 }
 
 .card:nth-child(4) {
-  margin-top: 6rem;
-  margin-left: 24rem;
+  margin-top: -13rem;
+  margin-left: 22rem;
 }
 
 .card:nth-child(5) {
-  margin-top: 8rem;
-  margin-left: 32rem;
+  margin-top: -13rem;
+  margin-left: 27rem;
 }
 .card:nth-child(6) {
-  margin-top: 10rem;
-  margin-left: 40rem;
+  margin-top: -13rem;
+  margin-left: 35rem;
 }
 .card:nth-child(7) {
-  margin-top: 12rem;
-  margin-left: 48rem;
+  margin-top: -13rem;
+  margin-left: 45rem;
 }
 .card:nth-child(8) {
-  margin-top: 14rem;
-  margin-left: 56rem;
+  margin-top: -13rem;
+  margin-left: 55rem;
 }
 
 #card-head {
@@ -312,11 +331,20 @@ html {
   min-height: 200vh !important;
 }
 
+.squares-canvas {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  z-index: -1;
+}
+
 #heading {
   font-size: var(--bigboi);
   font-family: "Itc", serif;
   text-align: center;
   margin: 2rem 5rem;
+  pointer-events: none;
 }
 
 .cards-team {
@@ -324,6 +352,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
+  pointer-events: none;
 }
 
 .card-team {
@@ -332,4 +361,9 @@ html {
   height: 27.1875rem;
   margin: 0 2rem;
   background-color: #363636;
+  pointer-events: none;
+}
+
+.swiper {
+  pointer-events: none !important;
 }

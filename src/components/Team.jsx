@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Squares from "./Squares";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,6 +47,13 @@ const Team = () => {
       {/* Add this div to ensure the gradient shows through */}
       <div className="background-overlay"></div>
 
+      <Squares
+        speed={0.5}
+        squareSize={47}
+        direction="diagonal" // up, down, left, right, diagonal
+        borderColor="#fff"
+        hoverFillColor="#49ebd8"
+      />
       <h1 className="text" id="heading">
         Meet The Team
       </h1>
