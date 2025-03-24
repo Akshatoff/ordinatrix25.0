@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./App.css";
 import { ReactLenis, useLenis } from "lenis/react";
 import { gsap } from "gsap";
@@ -8,9 +8,10 @@ import Team from "./components/Team";
 import "./index.css";
 import Home from "./components/Home";
 import About from "./components/About";
-import Trident from "./components/Trident";
 
 gsap.registerPlugin(ScrollTrigger);
+
+console.log(gsap);
 
 function App() {
   const lenis = useLenis();

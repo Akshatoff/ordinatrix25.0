@@ -1,7 +1,7 @@
 import React from "react";
 import DecryptedText from "./DecryptedText";
 import Particles from "./Particles";
-import Trident from "./Trident";
+// import Trident from "./Trident";
 
 export default function Home() {
   return (
