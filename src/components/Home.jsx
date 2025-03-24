@@ -1,9 +1,7 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
-import Trident from "./Trident";
-import BlurText from "./BlurText";
 import DecryptedText from "./DecryptedText";
 import Particles from "./Particles";
+import Trident from "./Trident";
 
 export default function Home() {
   return (

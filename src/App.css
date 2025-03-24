@@ -85,7 +85,22 @@ html {
   width: 100vw;
   height: 100vh;
   background: rgb(19, 19, 22);
-  background: linear-gradient(180deg, rgba(19, 19, 22, 1) 66%, #49ebd8 100%);
+  background: linear-gradient(
+      90deg,
+      rgba(19, 19, 22, 1) 0%,
+      rgba(19, 19, 22, 0) 80%
+    ),
+    linear-gradient(
+      270deg,
+      rgba(19, 19, 22, 1) 0%,
+      rgba(19, 19, 22, 0) 80%,
+      transparent 80%,
+      transparent 100%,
+      rgba(19, 19, 22, 0) 100%,
+      rgba(19, 19, 22, 1) 100%
+    ),
+    linear-gradient(180deg, rgba(19, 19, 22, 1) 66%, #49ebd8 100%);
+  /* background: linear-gradient(180deg, rgba(19, 19, 22, 1) 66%, #49ebd8 100%); */
   z-index: -1; /* Changed from 0 to ensure it's behind all content */
   pointer-events: none;
 }
@@ -166,16 +181,34 @@ html {
   justify-content: center;
 }
 
-#about-head {
-  color: var(--white);
-  font-size: var(--bigboi);
-  font-family: "Bebas Neue", sans-serif;
-  margin: 0 20rem;
-  width: 5rem;
-  line-height: 5rem;
+.text-container span {
+  width: 35rem;
+  text-align: center;
 }
 
-#about-head::before {
+.about-head-encrypted {
+  font-size: var(--bigboi) !important ;
+}
+
+.about-head {
+  color: var(--white);
+  font-size: var(--bigboi) !important;
+  font-family: "Itc", sans-serif;
+}
+
+.about-head:nth-child(1) {
+  margin-left: 15rem;
+  position: relative;
+}
+
+.about-head:nth-child(7) {
+  margin-left: 5rem;
+}
+.about-head-encrypted:nth-child(7) {
+  margin-left: 5rem;
+}
+
+.about-head:nth-child(1):before {
   content: "";
   position: absolute;
   display: block;

@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import DecryptedText from "./DecryptedText";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,9 +57,16 @@ export default function About() {
   return (
     <div className="section" id="about" ref={containerRef}>
       <div className="text-container">
-        <h1 className="text" id="about-head">
-          About Us
-        </h1>
+        <DecryptedText
+          text="About Us"
+          className="about-head"
+          animateOn="view"
+          revealDirection="start"
+          encryptedClassName="about-head-encrypted"
+          speed={120}
+          characters="About Us"
+          maxIterations={10}
+        ></DecryptedText>
       </div>
       <div className="animation-container">
         {sections.map((section, index) => (
