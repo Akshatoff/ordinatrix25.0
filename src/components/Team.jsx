@@ -11,6 +11,11 @@ const Team = () => {
   const swiperRef = useRef(null);
   const containerRef = useRef(null);
 
+  let ss = 47;
+  if (window.innerWidth > 1700) {
+    ss = 67;
+  }
+
   useEffect(() => {
     const swiper = swiperRef.current?.swiper;
 
@@ -49,7 +54,7 @@ const Team = () => {
 
       <Squares
         speed={0.5}
-        squareSize={47}
+        squareSize={ss}
         direction="diagonal" // up, down, left, right, diagonal
         borderColor="#fff"
         hoverFillColor="#49ebd8"

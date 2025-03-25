@@ -222,7 +222,7 @@ html {
   position: relative;
 }
 
-.about-head:nth-child(1):before {
+.about-head:nth-child(1)::before {
   content: "";
   position: absolute;
   display: block;
@@ -415,4 +415,100 @@ html {
 
 .swiper {
   pointer-events: none !important;
+}
+
+@media screen and (min-width: 1700px) {
+  .heading {
+    font-size: 8rem !important;
+  }
+  .encrypted {
+    font-size: 8rem !important;
+  }
+
+  .text-container {
+    margin-left: -65rem;
+  }
+
+  .animation-container {
+    margin-left: 55rem;
+  }
+  .about-head-encrypted {
+    font-size: 7rem !important;
+  }
+  .about-head {
+    font-size: 7rem !important;
+  }
+  .about-head:nth-child(1)::before {
+    height: 18rem;
+  }
+  .para {
+    font-size: 1.8rem;
+    width: 40rem;
+  }
+  .text-block {
+    gap: 2rem;
+    width: 55rem;
+  }
+  .subheading {
+    font-size: 4rem;
+  }
+
+  #event-head {
+    font-size: 8rem;
+    margin: 4rem 5rem;
+  }
+  .card-spotlight {
+    width: 35rem;
+    height: 20rem;
+    align-items: center;
+  }
+
+  #card-head {
+    font-size: 2.5rem;
+  }
+  #card-des {
+    font-size: 1.5rem;
+  }
+
+  .cards {
+    margin-left: 10rem;
+  }
+
+  .card:nth-child(2) {
+    margin-top: -17rem;
+    margin-left: 12rem;
+  }
+  .card:nth-child(3) {
+    margin-top: -17rem;
+    margin-left: 20rem;
+  }
+  .card:nth-child(4) {
+    margin-top: -17rem;
+    margin-left: 28rem;
+  }
+  .card:nth-child(5) {
+    margin-top: -17rem;
+    margin-left: 36rem;
+  }
+  .card:nth-child(6) {
+    margin-top: -17rem;
+    margin-left: 44rem;
+  }
+  .card:nth-child(7) {
+    margin-top: -17rem;
+    margin-left: 53rem;
+  }
+  .card:nth-child(8) {
+    margin-top: -17rem;
+    margin-left: 64rem;
+  }
+
+  #heading {
+    font-size: 7rem;
+  }
+
+  .card-team {
+    width: 40rem;
+    height: 40rem;
+  }
 }
