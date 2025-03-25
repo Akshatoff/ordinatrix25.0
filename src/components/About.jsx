@@ -1,10 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import DecryptedText from "./DecryptedText";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
   const sections = [
@@ -22,40 +18,11 @@ export default function About() {
     },
   ];
 
-  const containerRef = useRef(null);
-  const textRefs = useRef([]);
-
-  useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top top",
-        end: "+=200%", // Keeps section pinned for a longer period
-        pin: true,
-        scrub: 1, // Allows smooth progress-based animation
-      },
-    });
-
-    textRefs.current.forEach((el, index) => {
-      tl.fromTo(
-        el,
-        { y: "100vh", opacity: 0 },
-        { y: "0vh", opacity: 1, duration: 1.5 },
-        index * 1.5 // Stagger effect, delays each paragraph animation
-      ).to(
-        el,
-        { y: "-100vh", opacity: 0, duration: 1.5 },
-        index * 1.5 + 1.5 // Ensures fade-out happens after fade-in
-      );
-    });
-
-    return () => {
-      tl.kill(); // Cleanup GSAP timeline on unmount
-    };
-  }, []);
+  const { scrollYProgress } = useScroll();
+  const yRange = useTransform(scrollYProgress, [0.1, 0.5, 0.9], [200, 0, -200]);
 
   return (
-    <div className="section" id="about" ref={containerRef}>
+    <div className="section" id="about">
       <div className="text-container">
         <DecryptedText
           text="About Us"
@@ -66,18 +33,20 @@ export default function About() {
           speed={120}
           characters="About Us"
           maxIterations={10}
-        ></DecryptedText>
+        />
       </div>
       <div className="animation-container">
         {sections.map((section, index) => (
-          <div
+          <motion.div
             key={index}
             className="text-block"
-            ref={(el) => (textRefs.current[index] = el)}
+            style={{
+              y: yRange,
+            }}
           >
             <h1 className="subheading">{section.title}</h1>
             <motion.p className="para">{section.text}</motion.p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
