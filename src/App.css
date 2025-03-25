@@ -369,9 +369,50 @@ html {
   background: transparent;
 }
 
+.link {
+  margin-top: -2rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+}
+
 #event .container {
   background: transparent !important;
 }
+
+/* .popup {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.popup-panel {
+  background: white;
+  padding: 2.3rem;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.popup-head {
+  font-size: 2rem;
+}
+.popup-des {
+  margin-top: 1rem;
+  color: var(--gray);
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.8 2rem;
+  color: black;
+  background-color: transparent;
+  border-radius: 20px;
+} */
 
 /* Team */
 #team {
