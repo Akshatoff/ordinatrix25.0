@@ -25,13 +25,13 @@ export default function About() {
     <div className="section" id="about">
       <div className="text-container">
         <DecryptedText
-          text="About Us"
+          text="ABOUT US"
           className="about-head"
           animateOn="view"
           revealDirection="start"
           encryptedClassName="about-head-encrypted"
           speed={120}
-          characters="About Us"
+          characters="ABOUT US"
           maxIterations={10}
         />
       </div>

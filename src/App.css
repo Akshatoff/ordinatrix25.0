@@ -259,16 +259,24 @@ html {
 
 /* Event */
 
+.event-head-con {
+  float: right;
+  margin: 2rem 5rem;
+}
+
 #event-head {
   font-size: var(--bigboi);
   font-family: "Uniface", serif;
-  text-align: right;
-  margin: 2rem 5rem 0 0;
+}
+
+.event-head-encrypted {
+  font-size: var(--bigboi);
+  font-family: "Uniface", serif;
 }
 .cards {
   position: relative;
   margin-left: 2rem;
-  margin-top: -2rem;
+  margin-top: 2rem;
 }
 
 .card-spotlight {
@@ -316,34 +324,46 @@ html {
 
 .card:nth-child(2) {
   margin-top: -12rem;
-  margin-left: 8rem;
+  margin-left: 6rem;
 }
 
 .card:nth-child(3) {
   margin-top: -13rem;
-  margin-left: 16rem;
+  margin-left: 12rem;
 }
 
 .card:nth-child(4) {
-  margin-top: -13rem;
-  margin-left: 22rem;
+  margin-top: -12rem;
+  margin-left: 16rem;
 }
 
 .card:nth-child(5) {
-  margin-top: -13rem;
-  margin-left: 27rem;
+  margin-top: -12rem;
+  margin-left: 20rem;
 }
 .card:nth-child(6) {
-  margin-top: -13rem;
-  margin-left: 35rem;
+  margin-top: -12rem;
+  margin-left: 24rem;
 }
 .card:nth-child(7) {
-  margin-top: -13rem;
-  margin-left: 45rem;
+  margin-top: -12rem;
+  margin-left: 28rem;
 }
 .card:nth-child(8) {
-  margin-top: -13rem;
-  margin-left: 55rem;
+  margin-top: -12rem;
+  margin-left: 32rem;
+}
+.card:nth-child(9) {
+  margin-top: -12rem;
+  margin-left: 36rem;
+}
+.card:nth-child(10) {
+  margin-top: -12rem;
+  margin-left: 40rem;
+}
+.card:nth-child(11) {
+  margin-top: -12rem;
+  margin-left: 44rem;
 }
 
 #card-head {
@@ -383,36 +403,24 @@ html {
   background: transparent !important;
 }
 
-/* .popup {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.popup-panel {
-  background: white;
-  padding: 2.3rem;
-  border-radius: 20px;
-  width: 100%;
-}
-
-.popup-head {
+#modal-modal-title {
   font-size: 2rem;
-}
-.popup-des {
-  margin-top: 1rem;
-  color: var(--gray);
+  font-family: "Itc", serif;
 }
 
-.btn {
-  margin-top: 1rem;
-  padding: 0.8 2rem;
-  color: black;
-  background-color: transparent;
-  border-radius: 20px;
-} */
+#modal-modal-description {
+  font-size: 1.2rem;
+  font-family: "Avantgarde", serif;
+}
+
+#modal-modal-text {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-close {
+  margin-top: 1rem !important;
+}
 
 /* Team */
 #team {
@@ -496,7 +504,6 @@ html {
 
   #event-head {
     font-size: 8rem;
-    margin: 4rem 5rem;
   }
   .card-spotlight {
     width: 35rem;
@@ -512,36 +519,48 @@ html {
   }
 
   .cards {
-    margin-left: 10rem;
+    margin-left: 5rem;
   }
 
   .card:nth-child(2) {
     margin-top: -17rem;
-    margin-left: 12rem;
+    margin-left: 6rem;
   }
   .card:nth-child(3) {
     margin-top: -17rem;
-    margin-left: 20rem;
+    margin-left: 14rem;
   }
   .card:nth-child(4) {
     margin-top: -17rem;
-    margin-left: 28rem;
+    margin-left: 22rem;
   }
   .card:nth-child(5) {
     margin-top: -17rem;
-    margin-left: 36rem;
+    margin-left: 30rem;
   }
   .card:nth-child(6) {
     margin-top: -17rem;
-    margin-left: 44rem;
+    margin-left: 38rem;
   }
   .card:nth-child(7) {
     margin-top: -17rem;
-    margin-left: 53rem;
+    margin-left: 44rem;
   }
   .card:nth-child(8) {
     margin-top: -17rem;
+    margin-left: 50rem;
+  }
+  .card:nth-child(9) {
+    margin-top: -17rem;
+    margin-left: 58rem;
+  }
+  .card:nth-child(10) {
+    margin-top: -17rem;
     margin-left: 64rem;
+  }
+  .card:nth-child(11) {
+    margin-top: -17rem;
+    margin-left: 70rem;
   }
 
   #heading {
@@ -551,5 +570,25 @@ html {
   .card-team {
     width: 40rem;
     height: 40rem;
+  }
+
+  #modal-modal-title {
+    font-size: 4rem;
+    font-family: "Itc", serif;
+  }
+
+  #modal-modal-description {
+    font-size: 1.8rem;
+    font-family: "Avantgarde", serif;
+  }
+
+  #modal-modal-text {
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .btn-close {
+    margin-top: 1rem !important;
+    font-size: 1.5rem !important;
   }
 }
