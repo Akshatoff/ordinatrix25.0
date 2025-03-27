@@ -53,6 +53,13 @@ const Team = () => {
   let ss = 47;
   if (window.innerWidth > 1700) {
     ss = 67;
+  } else if (window.innerWidth < 1000) {
+    ss = 0;
+  }
+
+  let swiper_size = 50;
+  if (window.innerWidth < 1000) {
+    swiper_size = 150;
   }
 
   useEffect(() => {
@@ -104,7 +111,7 @@ const Team = () => {
 
       <Swiper
         ref={swiperRef}
-        spaceBetween={50}
+        spaceBetween={swiper_size}
         slidesPerView={1.5}
         centeredSlides={true}
         loop={false}

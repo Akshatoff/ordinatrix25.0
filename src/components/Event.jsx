@@ -28,6 +28,13 @@ const AnimatedCards = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   let [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(null);
+  let end_val;
+
+  if (window.innerWidth > 1000) {
+    end_val = 9000;
+  } else {
+    end_val = 7000;
+  }
 
   const cards_content = [
     {
@@ -191,7 +198,7 @@ const AnimatedCards = () => {
             pinSpacing: true,
             scrub: true,
             start: "top top",
-            end: "+=7000",
+            end: `+=${end_val}`,
             invalidateOnRefresh: true,
             onUpdate: (self) => {
               const index = Math.floor(self.progress * (cards.length - 1));
