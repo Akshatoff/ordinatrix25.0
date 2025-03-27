@@ -11,8 +11,6 @@ import About from "./components/About";
 
 gsap.registerPlugin(ScrollTrigger);
 
-console.log(gsap);
-
 function App() {
   const lenis = useLenis();
 

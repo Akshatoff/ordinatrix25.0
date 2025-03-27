@@ -4,12 +4,51 @@ import "swiper/css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Squares from "./Squares";
+import akshat from "../assets/coreteam/AKSHAT.jpg";
+import lavnika from "../assets/coreteam/lavnika.jpg";
+import daksh from "../assets/coreteam/daksh.jpg";
+import aneira from "../assets/coreteam/ANEIRA.jpg";
+import parth from "../assets/coreteam/parth.png";
+import nadal from "../assets/coreteam/nadal.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Team = () => {
   const swiperRef = useRef(null);
   const containerRef = useRef(null);
+
+  const team_image = [
+    {
+      name: "Lavnika",
+      position: "President",
+      image: lavnika,
+    },
+    {
+      name: "Daksh",
+      position: "Vice President",
+      image: daksh,
+    },
+    {
+      name: "Aneira",
+      position: "Creative Head",
+      image: aneira,
+    },
+    {
+      name: "Akshat",
+      position: "Web Development Head",
+      image: akshat,
+    },
+    {
+      name: "Parth",
+      position: "Designer",
+      image: parth,
+    },
+    {
+      name: "AR Nadal Verma",
+      position: "Programmer",
+      image: nadal,
+    },
+  ];
 
   let ss = 47;
   if (window.innerWidth > 1700) {
@@ -73,9 +112,21 @@ const Team = () => {
         speed={800} // Smooth transition speed
         onSwiper={(swiper) => (swiperRef.current = { swiper })}
       >
-        {[...Array(9)].map((_, index) => (
+        {team_image.map((card, index) => (
           <SwiperSlide key={index}>
-            <div className="card-team"></div>
+            <div className="card-team">
+              <img
+                src={card.image}
+                alt="team member's image"
+                className="image"
+              />
+              <h1 className="text" id="name">
+                {card.name}
+              </h1>
+              <h1 className="text" id="pos">
+                {card.position}
+              </h1>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
