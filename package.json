@@ -21,6 +21,7 @@
     "lenis": "^1.1.21",
     "ogl": "^1.0.11",
     "react": "18.2.0",
+    "react-animated-cursor": "^2.11.2",
     "react-dom": "18.2.0",
     "swiper": "^11.2.4",
     "three": "^0.174.0",

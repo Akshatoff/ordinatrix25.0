@@ -26,7 +26,7 @@ export default function About() {
       <div className="text-container">
         <DecryptedText
           text="ABOUT US"
-          className="about-head"
+          className="about-head anim-cursor"
           animateOn="view"
           revealDirection="start"
           encryptedClassName="about-head-encrypted"

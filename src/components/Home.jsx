@@ -10,7 +10,7 @@ export default function Home() {
         text="Ordin@trix 25.0"
         animateOn="view"
         revealDirection="start"
-        className="heading"
+        className="heading anim-cursor"
         encryptedClassName="encrypted"
         speed={120}
         characters="ORDIN@TRIX 25.0"

@@ -8,6 +8,7 @@ import Team from "./components/Team";
 import "./index.css";
 import Home from "./components/Home";
 import About from "./components/About";
+import AnimatedCursor from "react-animated-cursor";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,6 +36,41 @@ function App() {
 
   return (
     <ReactLenis root>
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={35}
+        color="255, 255, 255"
+        outerAlpha={0.8}
+        innerScale={1}
+        outerScale={1.7}
+        outerStyle={{
+          mixBlendMode: "exclusion",
+        }}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+          {
+            target: ".anim-cursor",
+            options: {
+              innerSize: 55,
+              outerSize: 55,
+              color: "255, 255, 255",
+              outerAlpha: 0.3,
+              innerScale: 0.7,
+              outerScale: 5,
+            },
+          },
+        ]}
+      ></AnimatedCursor>
       {/* Fixed background gradient that stays in place during scrolling */}
       <div className="background-grad"></div>
 

@@ -119,7 +119,7 @@ const Team = () => {
         borderColor="#fff"
         hoverFillColor="#49ebd8"
       />
-      <h1 className="text" id="heading">
+      <h1 className="text anim-cursor" id="heading">
         Meet The Team
       </h1>
 

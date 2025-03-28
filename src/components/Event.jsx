@@ -224,7 +224,7 @@ const AnimatedCards = () => {
 
       <div className="event-head-con">
         <DecryptedText
-          className="text event-head"
+          className="text event-head anim-cursor"
           id="event-head"
           text="EVENTS"
           animateOn="view"
