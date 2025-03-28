@@ -72,6 +72,8 @@ const Team = () => {
   let swiper_size = 50;
   if (window.innerWidth < 1000) {
     swiper_size = 150;
+  } else if (window.innerWidth < 500) {
+    swiper_size = 250;
   }
 
   useEffect(() => {
