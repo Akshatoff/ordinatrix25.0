@@ -294,6 +294,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  transition: all 200ms ease-in-out;
 }
 
 .card-spotlight::before {

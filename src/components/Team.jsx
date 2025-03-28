@@ -10,6 +10,8 @@ import daksh from "../assets/coreteam/daksh.jpg";
 import aneira from "../assets/coreteam/ANEIRA.jpg";
 import parth from "../assets/coreteam/parth.png";
 import nadal from "../assets/coreteam/nadal.jpg";
+import jyotirmay from "../assets/coreteam/jyotirmay.jpg";
+import parths from "../assets/coreteam/parthdusrawala.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,6 +49,16 @@ const Team = () => {
       name: "AR Nadal Verma",
       position: "Programmer",
       image: nadal,
+    },
+    {
+      name: "Jyotirmay",
+      position: "3d modelling head",
+      image: jyotirmay,
+    },
+    {
+      name: "Parth Bantala",
+      position: "Robotics Head",
+      image: parths,
     },
   ];
 
