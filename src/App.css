@@ -158,17 +158,6 @@ html {
   transition: all 0.5s cubic-bezier(0, 0, 0, 1);
 }
 
-.trident {
-  position: fixed !important;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-  height: 100vh;
-  z-index: 2;
-  pointer-events: none;
-}
-
 .content-container {
   position: relative;
   z-index: 3;
@@ -183,6 +172,17 @@ html {
   align-items: center;
   position: relative;
   overflow: visible; /* Ensures text blocks are visible */
+}
+
+.model-container {
+  position: fixed;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40vw;
+  height: 60vh;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .text-container {
@@ -782,5 +782,16 @@ html {
   .card-team {
     width: 18rem;
     height: 18rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .model-container {
+    display: none; /* Hide model on mobile */
+  }
+  .text-container {
+    margin-left: 0;
+  }
+  .animation-container {
+    margin-left: 0;
   }
 }
