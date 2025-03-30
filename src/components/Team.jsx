@@ -75,7 +75,7 @@ const Team = () => {
       image: siddhant,
     },
     {
-      name: "Parth Bantala",
+      name: "Parth Bhatla",
       position: "Robotics Head",
       image: parths,
     },

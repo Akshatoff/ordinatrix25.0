@@ -66,7 +66,7 @@ const AnimatedCards = () => {
       text: "Participants will be given prompts where they have to solve the problems in python or smth",
     },
     {
-      title: "MechaMarvel",
+      title: "Robo Fight",
       text: "Bot Battle is a robotics competition where teams build robots to push their opponents out of a ring.",
     },
     {
@@ -141,7 +141,7 @@ const AnimatedCards = () => {
       text: "The participants must analyze a given dataset and present meaningful insights, the particpants can use coding(Python, SQL)or no-code tools like Google Data Studio. The top 6 teams will advance to the finals. The participants must submit backend file and presentation/report. In the finals the participants must do a 5 - 7 min presentations showcasing dashboard and insights.",
     },
     {
-      title: "MechaMarvel",
+      title: "Robo Fight",
       class: "Open to all",
       participants: "A team of 2",
       teams: "1 team per school",
