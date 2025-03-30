@@ -9,6 +9,8 @@ import "./index.css";
 import Home from "./components/Home";
 import About from "./components/About";
 import AnimatedCursor from "react-animated-cursor";
+import Guideline from "./components/Guideline";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,6 +80,7 @@ function App() {
       <div className="content-container">
         <Home />
         <About />
+        <Guideline></Guideline>
         <Event />
         <Team />
       </div>

@@ -257,6 +257,30 @@ html {
   font-family: "Orbitron", sans-serif;
 }
 
+/* Guidelines */
+
+#guideline {
+  height: 130vh;
+}
+
+.guide-con {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
+  gap: 3rem;
+}
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.guide li{
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
 /* Event */
 
 .event-head-con {
