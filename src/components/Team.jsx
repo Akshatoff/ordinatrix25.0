@@ -95,37 +95,6 @@ const Team = () => {
     swiper_size = 250;
   }
 
-  useEffect(() => {
-    const swiper = swiperRef.current?.swiper;
-
-    if (!swiper) {
-      console.error("Swiper not initialized yet.");
-      return;
-    }
-
-    const totalSlides = swiper.slides.length;
-    const slideWidth = swiper.width;
-    const scrollDuration = totalSlides * slideWidth; // Dynamic end value
-
-    const scrollTrigger = ScrollTrigger.create({
-      trigger: containerRef.current,
-      start: "top top",
-      end: `+=${scrollDuration + 1000}`, // Ensure it scrolls for the full slider length
-      scrub: 5, // Ultra-smooth transition
-      pin: true,
-      pinSpacing: true,
-      onUpdate: (self) => {
-        if (!swiper.slides) return;
-        const progress = self.progress * (totalSlides - 1);
-        swiper.translateTo(-progress * slideWidth, false);
-      },
-    });
-
-    return () => {
-      scrollTrigger.kill();
-    };
-  }, []);
-
   return (
     <div className="section" id="team" ref={containerRef}>
       {/* Add this div to ensure the gradient shows through */}
@@ -148,7 +117,7 @@ const Team = () => {
         slidesPerView={1.5}
         centeredSlides={true}
         loop={false}
-        allowTouchMove={false} // Prevent manual dragging
+        allowTouchMove={true} // Prevent manual dragging
         speed={800} // Smooth transition speed
         onSwiper={(swiper) => (swiperRef.current = { swiper })}
       >

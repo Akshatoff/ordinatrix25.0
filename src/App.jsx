@@ -10,7 +10,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import AnimatedCursor from "react-animated-cursor";
 import Guideline from "./components/Guideline";
-
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,11 +79,13 @@ function App() {
 
       {/* Content container with proper stacking context */}
       <div className="content-container">
+        <Navbar></Navbar>
         <Home />
         <About />
         <Guideline></Guideline>
         <Event />
         <Team />
+        <Footer></Footer>
       </div>
     </ReactLenis>
   );

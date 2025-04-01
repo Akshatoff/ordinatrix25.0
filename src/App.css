@@ -105,6 +105,37 @@ html {
   pointer-events: none;
 }
 
+/* Navbar */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 10;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: -3rem;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.link-con {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style-type: none;
+  align-items: center;
+  margin-top: -2rem;
+}
+
+.link-con a {
+  color: white;
+  text-decoration: none;
+}
+
 /* Home */
 
 #home {
@@ -276,7 +307,7 @@ html {
   gap: 2rem;
 }
 
-.guide li{
+.guide li {
   font-size: 1.2rem;
   line-height: 2rem;
 }
@@ -451,7 +482,6 @@ html {
 #team {
   background: transparent !important;
   margin-top: 30vh;
-  min-height: 200vh !important;
 }
 
 .squares-canvas {
@@ -521,6 +551,18 @@ html {
   pointer-events: none !important;
 }
 
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #111;
+  padding: 2rem;
+}
+.footer * {
+  font-family: "Poppins", sans-serif;
+}
+
 @media screen and (min-width: 1700px) {
   .heading {
     font-size: 8rem !important;
@@ -555,6 +597,10 @@ html {
   }
   .subheading {
     font-size: 4rem;
+  }
+
+  #guideline {
+    height: 100vh;
   }
 
   #event-head {
@@ -727,6 +773,10 @@ html {
 }
 
 @media screen and (max-width: 400px) {
+  .navbar {
+    display: none;
+  }
+
   .heading {
     font-size: 2.5rem !important;
   }
@@ -739,9 +789,13 @@ html {
 
   .about-head {
     font-size: 1rem !important;
+    display: none;
   }
   .about-head:nth-child(1) {
     margin-left: 1rem;
+  }
+  .about-head:nth-child(1)::before {
+    display: none;
   }
   .animation-container {
     margin-left: 0rem;
@@ -756,7 +810,17 @@ html {
   #about {
     height: 220vh;
   }
+  #guideline {
+    height: 350vh;
+  }
 
+  #guideline #heading {
+    font-size: 3rem;
+  }
+
+  .guide-con {
+    flex-direction: column;
+  }
   .event-head-con {
     margin-left: 2rem !important;
     margin: 2rem 1rem;
