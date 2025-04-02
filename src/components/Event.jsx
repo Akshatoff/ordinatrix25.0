@@ -74,7 +74,7 @@ const AnimatedCards = () => {
       text: " Teams have to Design a wirelessly controlled robot which should be able to travel on sand, marbles, water, etc. ",
     },
     {
-      title: "Robo Kickers",
+      title: "Robo Soccer",
       text: "Teams of 2 wireless bots chase a ball around a big-sized arena with the aim of kicking more goals than the opponent.",
     },
     {
@@ -82,6 +82,7 @@ const AnimatedCards = () => {
       text: "Participants are required to design and present a working robotics model that promotes one or more (SDGs)",
     },
   ];
+  
 
   const pop_up = [
     {
@@ -157,7 +158,7 @@ const AnimatedCards = () => {
       text: " Teams have to Design a wirelessly controlled robot which should be able to travel on sand, marbles, water, etc. The robot that traverses all the hurdles and completes the track in minimum amount of time is declared as Robo race Champion. The bot must be controlled wirelessly and dimension of the box should be less than 25cm x 25cm x 20cm, the bot must be controlled wirelessly. Max weight allowed is 3kgs.",
     },
     {
-      title: "RoboKickers",
+      title: "Robo Soccer",
       class: "Open to all",
       participants: "A team of 2",
       teams: "1 team per school",
@@ -218,7 +219,7 @@ const AnimatedCards = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="container">
+    <div ref={containerRef} className="container" id="events">
       {/* Add this div to ensure the gradient shows through */}
       <div className="background-overlay"></div>
 

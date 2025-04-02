@@ -51,16 +51,15 @@ const Team = () => {
       position: "Creative Head",
       image: arnav,
     },
-
     {
-      name: "Parth",
-      position: "Designer",
-      image: parth,
+      name: "Parth Bhatla",
+      position: "Robotics Head",
+      image: parths,
     },
     {
-      name: "AR Nadal Verma",
-      position: "Programmer",
-      image: nadal,
+      name: "Siddhant",
+      position: "Robotics Head",
+      image: siddhant,
     },
     {
       name: "Jyotirmay",
@@ -71,16 +70,11 @@ const Team = () => {
       name: "Aditya",
       position: "3d modelling head",
       image: aditya,
-    },
+    },    
     {
-      name: "Siddhant",
-      position: "Robotics Head",
-      image: siddhant,
-    },
-    {
-      name: "Parth Bhatla",
-      position: "Robotics Head",
-      image: parths,
+      name: "AR Nadal Verma",
+      position: "Programmer",
+      image: nadal,
     },
   ];
 
@@ -122,7 +116,6 @@ const Team = () => {
         centeredSlides={true}
         loop={false}
         navigation
-        pagination={{clickable: true}}
         allowTouchMove={true} // Prevent manual dragging
         speed={800} // Smooth transition speed
         onSwiper={(swiper) => (swiperRef.current = { swiper })}

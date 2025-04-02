@@ -131,9 +131,18 @@ html {
   margin-top: -2rem;
 }
 
-.link-con a {
+.link-con a, .link-con select {
+  background-color: transparent;
   color: white;
   text-decoration: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+option {
+  background-color: var(--bg);
+  color: white;
 }
 
 /* Home */
@@ -505,7 +514,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  pointer-events: none;
+  
 }
 
 .card-team {
@@ -514,7 +523,6 @@ html {
   height: 27.1875rem;
   margin: 0 2rem;
   background-color: #363636;
-  pointer-events: none;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -547,9 +555,12 @@ html {
   background: rgba(19, 19, 22, 0.1);
 }
 
-.swiper {
-  pointer-events: none !important;
+.swiper-button-next::after, .swiper-button-prev::after {
+  
+  color: white;
 }
+
+
 
 /* footer */
 .footer {
