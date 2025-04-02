@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination} from "swiper/modules"
 import "swiper/css";
+import "swiper/css/pagination"
+import "swiper/css/navigation"
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Squares from "./Squares";
@@ -112,11 +115,14 @@ const Team = () => {
       </h1>
 
       <Swiper
+      modules={[Navigation, Pagination]}
         ref={swiperRef}
         spaceBetween={swiper_size}
         slidesPerView={1.5}
         centeredSlides={true}
         loop={false}
+        navigation
+        pagination={{clickable: true}}
         allowTouchMove={true} // Prevent manual dragging
         speed={800} // Smooth transition speed
         onSwiper={(swiper) => (swiperRef.current = { swiper })}
