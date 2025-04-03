@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <div className="section" id="home">
       <DecryptedText
-        text="Ordin@trix 25.0"
+        text="Ordin@triXkuriobots 25.0"
         animateOn="view"
         revealDirection="start"
         className="heading anim-cursor"
         encryptedClassName="encrypted"
         speed={120}
-        characters="ORDIN@TRIX 25.0"
+        characters="ORDIN@TRIXKURIOBOTS 25.0"
         maxIterations={10}
       />
       <Particles
