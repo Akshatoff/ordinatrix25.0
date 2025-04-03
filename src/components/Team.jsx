@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination} from "swiper/modules"
+import { Navigation, Pagination } from "swiper/modules"
 import "swiper/css";
 import "swiper/css/pagination"
 import "swiper/css/navigation"
@@ -43,7 +43,7 @@ const Team = () => {
     },
     {
       name: "Akshat",
-      position: "Web Development Head",
+      position: "Creative Head",
       image: akshat,
     },
     {
@@ -70,7 +70,7 @@ const Team = () => {
       name: "Aditya",
       position: "3d modelling head",
       image: aditya,
-    },    
+    },
     {
       name: "AR Nadal Verma",
       position: "Programmer",
@@ -109,7 +109,7 @@ const Team = () => {
       </h1>
 
       <Swiper
-      modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination]}
         ref={swiperRef}
         spaceBetween={swiper_size}
         slidesPerView={1.5}

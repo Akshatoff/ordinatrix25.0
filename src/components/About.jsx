@@ -6,7 +6,7 @@ export default function About() {
   const sections = [
     {
       title: "Our Journey",
-      text: "It all started 19 years ago. A fusion of creativity, talent and skill is what Ordin@trix is all about. Ordin@trix has evolved through the years moving from an interschool festival at the state level to an international event. Over the years we have had students from China, Muscat, Japan and other countries as regular participants.",
+      text: "It all started 21 years ago. A fusion of creativity, talent and skill is what Ordin@trix is all about. Ordin@trix has evolved through the years moving from an interschool festival at the state level to an international event. Over the years we have had students from China, Muscat, Japan and other countries as regular participants.",
     },
     {
       title: "Pyrotech - The Core",

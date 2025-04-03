@@ -51,7 +51,7 @@ const AnimatedCards = () => {
     },
     {
       title: "Movie@trix",
-      text: " film-based competition, details to be announced ",
+      text: "A creative and visual challenge to create a engaging one minute micro film to impress the judges.",
     },
     {
       title: "Byte@trix",
@@ -82,7 +82,7 @@ const AnimatedCards = () => {
       text: "Participants are required to design and present a working robotics model that promotes one or more (SDGs)",
     },
   ];
-  
+
 
   const pop_up = [
     {
@@ -241,9 +241,8 @@ const AnimatedCards = () => {
           <SpotlightCard
             key={index}
             spotlightColor="rgba(73, 235, 216, 0.8)"
-            className={`card custom-spotlight-card ${
-              index < activeIndex ? "frosted" : "active"
-            }`}
+            className={`card custom-spotlight-card ${index < activeIndex ? "frosted" : "active"
+              }`}
           >
             <h1 className="text" id="card-head">
               {card.title}
