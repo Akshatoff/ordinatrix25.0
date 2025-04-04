@@ -30,7 +30,7 @@ export default function Guideline() {
                     <li>
                         All future correspondence will be done through Discord and Mail.
                     </li>
-                    <li>Kindly join our Discord using the following <a className="shade" href="https://discord.com/invite/6yePcbWTQs"><b>link</b></a></li>
+                    <li>Kindly join our Discord using the following <a className="shade" href="https://discord.gg/jFvuAavhvx"><b>link</b></a></li>
 
                 </ul>
                 <ul className="guide">
