@@ -18,6 +18,7 @@ import parths from "../assets/coreteam/parthdusrawala.jpg";
 import aditya from "../assets/coreteam/aditya.jpg";
 import arnav from "../assets/coreteam/arnav.jpg";
 import siddhant from "../assets/coreteam/siddhant.jpg";
+import aradhya from "../assets/coreteam/aradhya.jpg"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,6 +61,11 @@ const Team = () => {
       name: "Siddhant",
       position: "Robotics Head",
       image: siddhant,
+    },
+    {
+      name: "Aradhya",
+      position:"Photography Head",
+      image: aradhya
     },
     {
       name: "Jyotirmay",
