@@ -104,7 +104,7 @@ const Team = () => {
       <div className="background-overlay"></div>
 
       <Squares
-        speed={0.5}
+        speed={0.1}
         squareSize={ss}
         direction="diagonal" // up, down, left, right, diagonal
         borderColor="#fff"
