@@ -18,6 +18,7 @@ import parths from "../assets/coreteam/parthdusrawala.jpg";
 import aditya from "../assets/coreteam/aditya.jpg";
 import arnav from "../assets/coreteam/arnav.jpg";
 import siddhant from "../assets/coreteam/siddhant.jpg";
+import aradhya from "../assets/coreteam/aradhya.jpg"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -62,6 +63,11 @@ const Team = () => {
       image: siddhant,
     },
     {
+      name: "Aradhya",
+      position:"Photography Head",
+      image: aradhya
+    },
+    {
       name: "Jyotirmay",
       position: "3d modelling head",
       image: jyotirmay,
@@ -98,7 +104,7 @@ const Team = () => {
       <div className="background-overlay"></div>
 
       <Squares
-        speed={0.5}
+        speed={0.1}
         squareSize={ss}
         direction="diagonal" // up, down, left, right, diagonal
         borderColor="#fff"

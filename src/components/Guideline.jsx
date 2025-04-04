@@ -9,7 +9,7 @@ export default function Guideline() {
             <div className="guide-con">
                 <ul className="guide">
                     <li >
-                        ONLINE registrations will be done on a first come first served basis. No registration will be taken on the day of the event. Registrations will close on Thursday, 20 April 2025 by 12 noon. Please register through the link given below: [Registration Link]
+                        ONLINE registrations will be done on a first come first served basis. No registration will be taken on the day of the event. Registrations will close on Thursday, 20 April 2025 by 12 noon. Please register through the link given below: <a href="https://forms.gle/EY3hWHL323Gvnmvx5" className="shade">https://forms.gle/EY3hWHL323Gvnmvx5</a>
                     </li>
                     <li>
                         The theme for this year is “Tech noir: The Flip Side of Innovation”
@@ -30,7 +30,7 @@ export default function Guideline() {
                     <li>
                         All future correspondence will be done through Discord and Mail.
                     </li>
-                    <li>Kindly join our Discord using the following <a className="shade" href="https://discord.gg/jFvuAavhvx"><b>link</b></a></li>
+                    <li>Kindly join our Discord using the following <a className="shade" href="https://discord.com/invite/6yePcbWTQs"><b>link</b></a></li>
 
                 </ul>
                 <ul className="guide">
