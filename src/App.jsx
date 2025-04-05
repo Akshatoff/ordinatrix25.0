@@ -12,6 +12,7 @@ import AnimatedCursor from "react-animated-cursor";
 import Guideline from "./components/Guideline";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Teaser from "./components/Teaser";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -83,6 +84,7 @@ function App() {
         <Home />
         <About />
         <Guideline></Guideline>
+        <Teaser></Teaser>
         <Event />
         <Team />
         <Footer></Footer>

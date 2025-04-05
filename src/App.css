@@ -131,7 +131,8 @@ html {
   margin-top: -2rem;
 }
 
-.link-con a, .link-con select {
+.link-con a,
+.link-con select {
   background-color: transparent;
   color: white;
   text-decoration: none;
@@ -273,6 +274,18 @@ option {
   margin: 2rem -2rem;
 }
 
+.model-container {
+  position: relative;
+  left: -65%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40vw;
+  height: 50vh;
+  z-index: 2;
+  pointer-events: none;
+  display: none;
+}
+
 .para {
   font-size: var(--smoltext);
   width: 25rem;
@@ -320,6 +333,19 @@ option {
 .guide li {
   font-size: 1.2rem;
   line-height: 2rem;
+}
+
+/* Teaser */
+
+#teaser {
+  display: flex;
+  justify-content: center;
+}
+
+.video {
+  width: 90%;
+  height: 80%;
+  border-radius: 20px;
 }
 
 /* Event */
@@ -515,7 +541,6 @@ option {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
 }
 
 .card-team {
@@ -556,12 +581,10 @@ option {
   background: rgba(19, 19, 22, 0.1);
 }
 
-.swiper-button-next::after, .swiper-button-prev::after {
-  
+.swiper-button-next::after,
+.swiper-button-prev::after {
   color: white;
 }
-
-
 
 /* footer */
 .footer {
@@ -609,6 +632,9 @@ option {
   }
   .subheading {
     font-size: 4rem;
+  }
+  .model-container {
+    left: -50%;
   }
 
   #guideline {
@@ -735,6 +761,9 @@ option {
 
   #about {
     height: 180vh;
+  }
+  .model-container {
+    display: none;
   }
 
   .cards {

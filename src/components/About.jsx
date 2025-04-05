@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import DecryptedText from "./DecryptedText";
+import Trident from "./Trident";
 
 export default function About() {
   const sections = [
@@ -23,6 +24,7 @@ export default function About() {
 
   return (
     <div className="section" id="about">
+      <Trident></Trident>
       <div className="text-container">
         <DecryptedText
           text="ABOUT US"
