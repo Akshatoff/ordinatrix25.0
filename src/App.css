@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* font-family: 'Bebas Neue', sans-serif;
 font-family: 'Coming Soon', cursive;
@@ -77,6 +79,10 @@ html {
   font-family: "Itc";
   src: url("./assets/font/itc-avant-garde-gothic-std-demi_Z6tUp/itcwalafont/font.otf");
 }
+@font-face {
+  font-family: "Euroscein";
+  src: url("./assets/font/eurocine/Eurocine.otf");
+}
 
 .background-grad {
   position: fixed;
@@ -85,7 +91,7 @@ html {
   width: 100vw;
   height: 100vh;
   background: rgb(19, 19, 22);
-  background: linear-gradient(
+  /* background: linear-gradient(
       90deg,
       rgba(19, 19, 22, 1) 0%,
       rgba(19, 19, 22, 0) 80%
@@ -99,7 +105,7 @@ html {
       rgba(19, 19, 22, 0) 100%,
       rgba(19, 19, 22, 1) 100%
     ),
-    linear-gradient(180deg, rgba(19, 19, 22, 1) 66%, #49ebd8 100%);
+    linear-gradient(180deg, rgba(19, 19, 22, 1) 66%, #49ebd8 100%); */
   /* background: linear-gradient(180deg, rgba(19, 19, 22, 1) 66%, #49ebd8 100%); */
   z-index: -1; /* Changed from 0 to ensure it's behind all content */
   pointer-events: none;
@@ -167,14 +173,17 @@ option {
 }
 
 .heading {
-  font-size: 5rem !important;
-  font-family: "Uniface", serif;
+  font-size: 4.2rem !important;
+  font-family: "Raleway", sans-serif;
   width: 100vw;
+  text-transform: uppercase;
   text-align: center;
+  font-weight: 300;
 }
 .encrypted {
-  font-size: 5rem !important;
-  font-family: "Uniface", serif;
+  font-size: 4.2rem !important;
+  font-family: "Raleway", sans-serif;
+
 }
 
 .circular-text {
@@ -287,7 +296,7 @@ option {
 }
 
 .para {
-  font-size: var(--smoltext);
+  font-size: 1rem;
   width: 25rem;
   text-align: center;
   color: var(--notajeebgray);
@@ -303,12 +312,13 @@ option {
   margin-bottom: 200px; /* Ensures separation between blocks */
   z-index: 2; /* Prevents it from being hidden */
   position: relative;
+  gap: 0.5rem;
 }
 
 .subheading {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--white);
-  font-family: "Orbitron", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Guidelines */
@@ -350,14 +360,14 @@ option {
 
 /* Event */
 
-.event-head-con {
+/* .event-head-con {
   float: right;
   margin: 2rem 5rem;
 }
 
 #event-head {
   font-size: var(--bigboi);
-  font-family: "Uniface", serif;
+  font-family: "Itc", sans-serif;
 }
 
 .event-head-encrypted {
@@ -512,12 +522,115 @@ option {
 
 .btn-close {
   margin-top: 1rem !important;
+} */
+
+
+#event-heads {
+  font-size: 10rem;
+  font-family: 'Montserrat', sans-serif;
+  text-orientation: mixed;
+  font-style: normal;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, #fff 45%, var(--bg) 72%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 1;
+  z-index: 0;
+  text-align: center;
+}
+.card-con {
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.event-card:nth-child(11) {
+  margin-left: 17.5rem;
+}
+
+.event-card::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.1rem;
+  height: 25rem;
+  background: linear-gradient(180deg, rgb(255, 255, 255) -100%  , #2b2b2b 100%);
+  margin: 0.4rem 2rem;
+}
+
+.event-card::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.1rem;
+  height: 25rem;
+  background: linear-gradient(180deg, rgb(255, 255, 255) -100%  , #2b2b2b 100%);
+  margin: 0.4rem 32.7rem;
+}
+
+.vid-con {
+  width: 25rem;
+  display: flex;
+  flex:1 1 0%;
+  border-radius: 40px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+  margin-left: 5rem;
+}
+
+.vid {
+width: 100rem;
+}
+
+.text-con {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+#event-head {
+  font-size: 1.5rem;
+  margin-left: 5.8rem;
+  margin-top: 1rem;
+}
+
+#desc {
+  font-size: 1rem;
+  width: 20rem;
+  margin-left: 5.8rem;
+  margin-top: -1rem;
 }
 
 /* Team */
 #team {
   background: transparent !important;
   margin-top: 30vh;
+}
+
+#team-head {
+  font-size: 7rem;
+  font-family: 'Montserrat', sans-serif;
+  text-orientation: mixed;
+  font-style: normal;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, #fff 45%, var(--bg) 72%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 1;
+  z-index: 0;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: -7rem;
 }
 
 .squares-canvas {

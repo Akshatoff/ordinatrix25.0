@@ -109,14 +109,8 @@ const Team = () => {
       {/* Add this div to ensure the gradient shows through */}
       <div className="background-overlay"></div>
 
-      <Squares
-        speed={0.1}
-        squareSize={ss}
-        direction="diagonal" // up, down, left, right, diagonal
-        borderColor="#fff"
-        hoverFillColor="#49ebd8"
-      />
-      <h1 className="text anim-cursor" id="heading">
+
+      <h1 className="text anim-cursor" id="team-head">
         Meet The Team
       </h1>
 
@@ -126,9 +120,9 @@ const Team = () => {
         spaceBetween={swiper_size}
         slidesPerView={1.5}
         centeredSlides={true}
-        loop={false}
+        loop={true}
         navigation
-        allowTouchMove={true} // Prevent manual dragging
+        allowTouchMove={false} // Prevent manual dragging
         speed={800} // Smooth transition speed
         onSwiper={(swiper) => (swiperRef.current = { swiper })}
       >
