@@ -63,7 +63,7 @@ const AnimatedCards = () => {
     },
     {
       title: "Code@trix",
-      text: "Participants have to analyse a dataset based on the given prompts and present meaningful insights for the theme chosen.",
+      text: "Participants have to analyse a dataset based on the given prompts and present insights for the theme chosen.",
     },
     {
       title: "Robo Fight",
