@@ -51,7 +51,7 @@ const AnimatedCards = () => {
     },
     {
       title: "Movie@trix",
-      text: "A creative and visual challenge to create a engaging one minute micro film to impress the judges.",
+      text: "A creative and visual challenge to create an engaging one minute micro film to impress the judges.",
     },
     {
       title: "Byte@trix",
