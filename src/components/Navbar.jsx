@@ -44,7 +44,7 @@ export default function Navbar() {
       participants: "A team of 2",
       teams: "1 team per school",
       mode: "Prelims - Submission based, Finals - Offline",
-      text: "A high energy gaming competition featuring multiple rounds across different gaming platforms. The games to be played are Brawlhalla, Krunker and Roblox Rival. The top 10 teams will qualify for the offline finals. The usage of any kind of hack and/or aimbot is stricly prohibited. ",
+      text: "A high energy gaming competition featuring multiple rounds across different gaming platforms.  The top 10 teams will qualify for the offline finals. The usage of any kind of hack and/or aimbot is stricly prohibited. ",
     },
     {
       title: "Movie@trix",
